@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>浙江富春江环保科技研究有限公司</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="Description" content="亿校云,中国学校网站建设行业领导者,在北京、上海、浙江、湖南、深圳等省拥有大量学校客户,服务几千家重点院校,上万个项目经验,为学校提供专业的学校网站建设,学校网站建设,杭州学校网站建设,网站制作服务,服务全国学校，无论中小学、职高技校还是985、211重点高校都拥有非常高的评价和口碑。">
+	<meta name="author" content="杭州亿校云信息技术有限公司-杭州校园网站建设,杭州校园网站制作">
+	<meta name="Copyright" content="杭州校园网站建设：杭州亿校云信息技术有限公司版权所有">
+	<meta name="keywords" content="浙江富春江环保科技研究有限公司">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+  <link type="text/css" href="css/style.css" rel="stylesheet"/>
+
+  <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+  <!-- <script type="text/javascript" src="jquery.event.drag-1.5.min.js"></script> -->
+	<script type="text/javascript" src="./js/jquery.touchSlider.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+
+      $(".main_visual").hover(function(){
+        $("#btn_prev,#btn_next").fadeIn()
+      },function(){
+        $("#btn_prev,#btn_next").fadeOut()
+      });
+      
+      $dragBln = false;
+      
+      $(".main_image").touchSlider({
+        flexible : true,
+        speed : 500,
+        btn_prev : $("#btn_prev"),
+        btn_next : $("#btn_next"),
+        paging : $(".flicking_con a"),
+        counter : function (e){
+          $(".flicking_con a").removeClass("on").eq(e.current-1).addClass("on");
+        }
+      });
+      
+      $(".main_image").bind("mousedown", function() {
+        $dragBln = false;
+      });
+      
+      $(".main_image").bind("dragstart", function() {
+        $dragBln = true;
+      });
+      
+      $(".main_image a").click(function(){
+        if($dragBln) {
+          return false;
+        }
+      });
+      
+      timer = setInterval(function(){
+        $("#btn_next").click();
+      }, 8000);
+      
+      $(".main_visual").hover(function(){
+        clearInterval(timer);
+      },function(){
+        timer = setInterval(function(){
+          $("#btn_next").click();
+        },8000);
+      });
+      
+      $(".main_image").bind("touchstart",function(){
+        clearInterval(timer);
+      }).bind("touchend", function(){
+        timer = setInterval(function(){
+          $("#btn_next").click();
+        }, 8000);
+      });
+    });
+</script>
+</head>
+<body>
+	<div class="main">
+		<div class="header">
+			<div class="header-logo"><img src="./img/logo.png"></div>
+			<div class="header-han p-none">
+				<div class="han"></div>
+			</div>
+			<div class="p-nav m-none">
+				<ul class="nav-ul">
+					<li>
+						<a href="javascript:;">首页</a>
+					</li>
+					<li><a href="javascript:;">关于我们</a>
+						<div class="nav-menu">
+							<ul class="nav-menu-ul">
+								<li class="nav-menu-li"><a href="javascript:;">企业简介</a></li>
+								<li><a href="javascript:;">企业文化</a></li>
+								<li><a href="javascript:;">领导关怀</a></li>
+								<li><a href="javascript:;">党建工作</a></li>
+								<li><a href="javascript:;">组织架构</a></li>
+								<li><a href="javascript:;">成员企业</a></li>
+								<li><a href="javascript:;">资质荣誉</a></li>
+							</ul>
+						</div></li>
+					<li><a href="javascript:;">产品中心</a>
+						<div class="nav-menu">
+							<ul class="nav-menu-ul">
+								<li class="nav-menu-li"><a href="javascript:;">产品中心</a></li>
+								<li><a href="javascript:;">产品中心</a></li>
+								<li><a href="javascript:;">产品中心</a></li>
+								<li><a href="javascript:;">产品中心</a></li>
+							</ul>
+						</div></li>
+					<li><a href="javascript:;">技术研发</a>
+						<div class="nav-menu">
+							<ul class="nav-menu-ul">
+								<li class="nav-menu-li"><a href="javascript:;">技术研发</a></li>
+								<li><a href="javascript:;">技术研发</a></li>
+								<li><a href="javascript:;">技术研发</a></li>
+								<li><a href="javascript:;">技术研发</a></li>
+								<li><a href="javascript:;">技术研发</a></li>
+							</ul>
+						</div></li>
+					<li><a href="javascript:;">解决方案</a>
+						<div class="nav-menu">
+							<ul class="nav-menu-ul">
+								<li class="nav-menu-li"><a href="javascript:;">解决方案</a></li>
+								<li><a href="javascript:;">解决方案</a></li>
+								<li><a href="javascript:;">解决方案</a></li>
+								<li><a href="javascript:;">解决方案</a></li>
+							</ul>
+						</div></li>
+					<li><a href="javascript:;">客户服务</a>
+						<div class="nav-menu">
+							<ul class="nav-menu-ul">
+								<li class="nav-menu-li"><a href="javascript:;">客户服务</a></li>
+								<li class="nav-menu-li"><a href="javascript:;">客户服务</a></li>
+								<li class="nav-menu-li"><a href="javascript:;">客户服务</a></li>
+							</ul>
+						</div></li>
+					<li><a href="javascript:;">联系我们</a>
+						<div class="nav-menu">
+							<ul class="nav-menu-ul">
+								<li class="nav-menu-li"><a href="javascript:;">联系我们</a></li>
+								<li><a href="javascript:;">联系我们</a></li>
+							</ul>
+						</div></li>
+					<li><input class="serach-input" type="" name="" placeholder="请输入要查询的内容"><span class="search"></span></li>
+				</ul>
+			</div>
+			<div class="m-nav">
+				<div class="nav-bg"></div>
+				<ul>
+					<li><a href="./index.html">首页</a></li>
+					<li><a href="javascript:;">关于我们</a></li>
+					<li><a href="javascript:;">产品中心</a></li>
+					<li><a href="javascript:;">技术研发</a></li>
+					<li><a href="javascript:;">解决方案</a></li>
+					<li><a href="javascript:;">客户服务</a></li>
+					<li><a href="javascript:;">联系我们</a></li>
+					<li><a href="javascript:;">解决方案</a></li>
+					<li><a href="javascript:;">客户服务</a></li>
+					<li><a href="javascript:;">联系我们</a></li>
+					<li><a href="javascript:;">解决方案</a></li>
+					<li><a href="javascript:;">客户服务</a></li>
+					<li><a href="javascript:;">联系我们</a></li>
+				</ul>
+			</div>
+		</div>
+
+	    <div class="main_visual">
+	      <div class="flicking_con">
+	        <a href="#"></a>
+	        <a href="#"></a>
+	        <a href="#"></a>
+	      </div>
+	      <div class="main_image">
+	        <ul>
+	          <li>
+	          	<span class="img_1"></span>
+	          </li>
+	          <li><span class="img_2"></span></li>
+	          <li><span class="img_3"></span></li>
+	        </ul>
+	        
+	        <a href="javascript:;" id="btn_prev" class="m-none"></a>
+	        <a href="javascript:;" id="btn_next" class="m-none"></a>
+	      </div>
+	      <!-- <div class="img_Text">
+	      	<div class="img_TCon">提升污染物减排技术</div>
+	      	<div class="img_TCon">描绘大自然美好蓝天</div>
+	      	<div class="img_sr">
+	      		<ul>
+	      			<li><div class="section-sicon section-estate"></div><div class="sr2-s">立足产业</div></li>
+	      			<li><div class="section-sicon section-innovate"></div><div class="sr2-s">求是创新</div></li>
+	      			<li><div class="section-sicon section-inaugurate"></div><div class="sr2-s">一流人才</div></li>
+	      		</ul>
+			</div>
+	      </div> -->
+	    </div>
+
+		<div class="section m-none">
+			<div class="section-lf">
+				<div class="section-head">产品中心</div>
+				<div class="section-desc">
+					<div>二噁英在线检测系统</div>
+					<div>主要应用对象：</div>
+					<div>城市生活垃圾焚烧炉、危险废弃物焚烧炉、医疗废弃物焚烧炉、水泥窑、冶金炉窑以及环境监测部门等</div>
+				</div>
+				<div class="section-sicon section-around section-margin-six"></div>
+				<div class="section-img">
+					<img class="" src="./img/productMachine.png">
+				</div>
+			</div>
+			<div class="section-rig">
+				<div class="sr-item1">
+					<div class="section-head">关于我们</div>
+					<div class="section-desc sr-sdesc">
+						<div>为实现节能环保产业的发展战略，推动能源清洁利用及环保技术应用，探索新的业务发展模式，准确把握市场发展的机遇，浙江富春江环保热电股份有限公司（股票代码002479）出资与浙江大学...</div>
+					</div>
+
+				<div class="sr1-select">
+					<div class="section-sicon section-team"></div><div class="sr1-padding">组织机构</div>
+					<div class="section-sicon section-topclass"></div><div class="sr1-padding">研发团队</div>
+				</div>
+				
+				</div>
+				<div class="sr-item2">
+					<div class="section-head">发展历程</div>
+					<div class="section-desc sr-sdesc">
+						<div>公司技术支撑单位浙江大学于上世纪90年代即开展二噁英相关研究，2004年建成国际先进水平的二噁英实验室，具有国家计量认证资质，被列入联合国环境保护署...</div>
+					</div>
+					<div class="section-sicon section-around section-margin-six"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="m-section p-none">
+			<div class="ms-">
+				<div class="section-head">关于我们</div>
+				<div class="section-desc sr-sdesc">
+					<div>为实现节能环保产业的发展战略，推动能源清洁利用及环保技术应用，探索新的业务发展模式，准确把握市场发展的机遇，浙江富春江环保热电股份有限公司（股票代码002479）出资与浙江大学...</div>
+				</div>
+				<div class="sr1-select subtract-padding-top border-bottom">
+					<div class="section-sicon section-team"></div><div class="sr1-padding">组织机构</div>
+					<div class="section-sicon section-topclass"></div><div class="sr1-padding">研发团队</div>
+				</div>
+			</div>
+				<div class="ms-space"></div>
+			<div class="ms-">
+				<div class="m-ms-img">
+				</div>
+				<div class="section-head">发展历程</div>
+				<div class="section-desc sr-sdesc">
+					<div>公司技术支撑单位浙江大学于上世纪90年代即开展二噁英相关研究，2004年建成国际先进水平的二噁英实验室，具有国家计量认证资质，被列入联合国环境保护署...</div>
+				</div>
+				<div class="section-sicon section-around section-margin-three"></div>
+			</div>
+				<div class="ms-space"></div>
+			<div class="ms-">
+				<div class="section-img">
+					<img class="m-productMachine" src="./img/productMachine.png">
+				</div>
+				<div class="section-head">产品中心</div>
+				<div class="section-desc sr-sdesc">
+					<div>二噁英在线检测系统&nbsp;主要应用对象&nbsp;:&nbsp;&nbsp;城市生活垃圾焚烧炉、危险废弃物焚烧炉、医疗废弃物焚烧炉、水泥窑、冶金炉窑以及环境监测部门等。提供服务:&nbsp;1.&nbsp;二噁英在线检测系统的销售、安装、调试和标定等...</div>
+				</div>
+				<div class="section-sicon section-around section-margin-three"></div>
+			</div>
+				<div class="ms-space"></div>
+			<div class="ms-"></div>
+				<div class=""></div>
+		</div>
+
+		<div class="con-video">
+			<video src="./video/研究院宣传片-剪切版.mp4" controls poster="./img/poster.png">
+				对比起，您的浏览器不支持H5视频！
+			</video>
+		</div>
+
+		<div class="p-footer m-none">
+			<div class="footer-con">
+				<div class="footer-text1">浙江富春江环保科技研究有限公司</div>
+				<div class="footer-1">
+					<div class="footer-text1 ft-pb">浙江富春江环保科技研究院</div>
+					<div class="footer-text2">电话&nbsp;:&nbsp;0571-63167750</div>
+					<div class="footer-text2">传真&nbsp;:&nbsp;0571-63167750</div>
+					<div class="footer-text2">邮箱&nbsp;:&nbsp;fcbeti@126.com</div>
+					<div class="footer-text2">地址&nbsp;:&nbsp;浙江杭州市富阳区江滨东大道138号富春江集团6楼</div>
+				</div>
+				<div class="footer-2">
+					<div class="footer-text1 ft-pb">友情链接</div>
+					<a class="footer-text2 ft-pr" href="javascript">浙江大学</a>
+					<a class="footer-text2 ft-pr" href="javascript">浙江省环境监测中心</a>
+					<a class="footer-text2 ft-pr" href="javascript">浙江省环科院</a><br>	
+					<a class="footer-text2 ft-pr" href="javascript">浙江省环境保护局</a>
+					<a class="footer-text2 ft-pr" href="javascript">浙江省环境保护厅</a><br>	
+					<a class="footer-text2 ft-pr" href="javascript">浙江省环境保护科学设计研究院</a><br>	
+					<a class="footer-text2 ft-pr" href="javascript">中国环境监测总站</a>
+				</div>
+				<div class="footer-3">
+					<div class="f3-tdc">
+						<div class="left">
+							<img src="./img/tdc-official.png">
+						</div>	
+						<div class="right">
+							<div class="footer-text2 ft-pt">扫一扫</div>
+							<div class="footer-text2">查看手机版官网</div>
+						</div>	
+					</div>
+				</div>
+				<div class="footer-copy">版权所有&copy;浙江富春江环保科技研究有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;浙ICP备16002471号-1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;技术支持&nbsp;:&nbsp;<span class="font-w"><a href="javascript:;">亿校云</span></a></div>
+			</div>
+		</div>
+
+		<div class="m-footer p-none">
+			<div class="m-tdc">
+				<div class="">
+					<img src="./img/tdc-official.png">
+					<div class="mf-img-text">官方微信公众号</div>
+				</div>
+				<div>
+					<img src="./img/tdc-official.png">
+					<div class="mf-img-text">手机版官网</div>
+				</div>
+			</div>
+			<div class="m-message">
+				<div class="footer-1">
+					<div class="footer-text2">电话&nbsp;:&nbsp;0571-63167750&nbsp;&nbsp;&nbsp;传真&nbsp;:&nbsp;0571-63167750</div>
+					<div class="footer-text2">邮箱&nbsp;:&nbsp;fcbeti@126.com</div>
+					<div class="footer-text2">地址&nbsp;:&nbsp;浙江杭州市富阳区江滨东大道138号富春江集团6楼</div>
+					<div class="footer-text2">版权所有&copy;浙江富春江环保科技研究有限公司</div>
+					<div class="footer-text2">浙ICP备16002471号-1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;技术支持&nbsp;:&nbsp;<span class="font-w"><a href="javascript:;">亿校云</a></span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./js/index.js"></script>
+</body>
+</html>

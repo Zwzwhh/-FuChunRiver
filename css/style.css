@@ -1,0 +1,44 @@
+﻿/* main_image */
+.main_visual{user-select: none;width: 100%;height:820px;border-top:1px solid #d7d7d7;overflow:hidden;position:relative;}
+.main_image{height:820px;overflow:hidden;position:relative;}
+.main_image ul{width:9999px;height:820px;overflow:hidden;position:absolute;top:0;left:0}
+.main_image li{float:left;width:100%;height:820px;}
+.main_image li span{display:block;width:100%;height:820px}
+.main_image li a{display:block;width:100%;height:820px}
+.main_image li .img_1{background:url('../img/dandelion.png') no-repeat;background-size: cover}
+.main_image li .img_2{background:url('../img/dandelion.png') no-repeat;background-size: cover}
+.main_image li .img_3{background:url('../img/dandelion.png') no-repeat;background-size: cover}
+
+.main_visual .img_Text {position: absolute; top: 20%;width: 100%;text-align: center; z-index: 999;}
+.main_visual .img_TCon {font-size: 60px;}
+
+.img_sr li {display: inline-block;margin: 80px 50px;}
+.img_sr li div {margin: 0 auto; text-align: center;}
+.img_sr li .section-sicon {width: 100px; height: 100px;}
+
+div.flicking_con{position:absolute;bottom: 55px;left:50.6%;z-index:998;width:300px;height:21px;margin:0 0 0 -50px;}
+div.flicking_con a{float:left;width:10px;height:10px;margin:0 10px;padding:0;
+	background:#fff;display:block;text-indent:-1000px;border: 1px solid #fff; border-radius: 50%;}
+div.flicking_con a.on{background-color:transparent;}
+#btn_prev,#btn_next{z-index:1000;position:absolute;display:block;width:73px!important;height:74px!important;top:50%;margin-top:-37px; transition: all .5s;}
+#btn_prev{border-radius: 50%;background: url(../img/icon.png) no-repeat 20px -177px;left:100px;}
+#btn_next{border-radius: 50%;background: url(../img/icon.png) no-repeat -35px -177px;right:100px;}
+#btn_prev:hover{background-color: #a8ccd6}
+#btn_next:hover{background-color: #a8ccd6}
+
+@media screen and (max-width: 768px) {
+	.main_image{height:400;}
+	.main_visual{height:400px;}
+	.main_image ul{height:400px;overflow:hidden;position:absolute;top:0;left:0}
+	.main_image li{height:400px;}
+	.main_image li span{height:400px}
+	.main_image li a{display:block;width:100%;height:820px}
+	.main_image li .img_1{background-position: center}
+	.main_image li .img_2{background-position: center}
+	.main_image li .img_3{background-position: center}
+	.main_visual .img_TCon {font-size: 2.3em !important;top: 26%;}
+	.img_sr li {display: inline-block;margin: 80px 5%;}
+	.img_sr li .section-sicon {width: 50px; height: 50px;}
+	div.flicking_con{bottom: 15px;}
+
+}
